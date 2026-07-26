@@ -1,0 +1,1015 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<title>施設検索 | 日本温泉協会</title>
+
+<!-- ?php get_template_part( 'header_common' );  // (header_common.php) ?-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="Keywords" content="温泉,日本,協会">
+<meta name="Description" content="日本温泉協会の公式サイトです。全国の温泉地や加盟施設を検索、宿泊予約ができる。また協会の活動や刊行物、催し物を紹介。温泉のことを学ぶなら温泉百科をご覧ください。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="施設検索 | 日本温泉協会">
+<meta property="og:image" content="https://www.spa.or.jp/img/common/ogp.jpg">
+<meta property="og:description" content="日本温泉協会の公式サイトです。全国の温泉地や加盟施設を検索、宿泊予約ができる。また協会の活動や刊行物、催し物を紹介。温泉のことを学ぶなら温泉百科をご覧ください。">
+<meta property="og:url" content="https://www.spa.or.jp/search_f/">
+<meta property="og:site_name" content="一般社団法人 日本温泉協会　～温泉名人～">
+<meta name="twitter:card" content="summary">
+<!--meta name="twitter:site" content=""-->
+<!--meta name="twitter:image" content=""-->
+<link rel="shortcut icon" href="https://www.spa.or.jp/img/common/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://www.spa.or.jp/img/common/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.spa.or.jp/img/common/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.spa.or.jp/img/common/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.spa.or.jp/img/common/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.spa.or.jp/img/common/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.spa.or.jp/img/common/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.spa.or.jp/img/common/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.spa.or.jp/img/common/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.spa.or.jp/img/common/apple-touch-icon-180x180.png" />
+<link rel="alternate" type="application/rss+xml" title="日本温泉協会～温泉名人～　温泉百科" href="https://www.spa.or.jp/feed/" />
+<link rel="alternate" type="application/rss+xml" title="日本温泉協会～温泉名人～　お知らせ" href="https://www.spa.or.jp/feed/?post_type=news" />
+<link rel="alternate" type="application/rss+xml" title="日本温泉協会～温泉名人～　刊行物のご案内" href="https://www.spa.or.jp/feed/?post_type=books" />
+<link rel="alternate" type="application/rss+xml" title="日本温泉協会～温泉名人～　セミナー・イベント情報" href="https://www.spa.or.jp/feed/?post_type=seminar" />
+<link rel="alternate" type="application/rss+xml" title="日本温泉協会～温泉名人～　国民保養温泉地" href="https://www.spa.or.jp/feed/?post_type=kokumin" />
+<link rel="alternate" type="application/rss+xml" title="日本温泉協会～温泉名人～　会員専用情報" href="https://www.spa.or.jp/feed/?post_type=member" />
+<link rel="alternate" type="application/rss+xml" title="日本温泉協会～温泉名人～　地熱発電関連情報" href="https://www.spa.or.jp/feed/?post_type=geo" />
+<link rel="canonical" href="https://www.spa.or.jp/search_f/">
+
+<link rel="stylesheet" type="text/css" href="https://www.spa.or.jp/css/common.css">
+<link rel="stylesheet" type="text/css" href="https://www.spa.or.jp/css/style.css">
+<link rel="stylesheet" type="text/css" href="https://www.spa.or.jp/css/featherlight.css">
+<link rel="stylesheet" type="text/css" href="https://www.spa.or.jp/css/featherlight.gallery.css">
+<script type="text/javascript" src="https://www.spa.or.jp/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="https://www.spa.or.jp/js/common.js"></script>
+<script type="text/javascript" src="https://www.spa.or.jp/js/heightLine.js"></script>
+<script type="text/javascript" src="https://www.spa.or.jp/js/featherlight.js"></script>
+<script type="text/javascript" src="https://www.spa.or.jp/js/featherlight.gallery.js"></script>
+<script type="text/javascript" src="https://www.spa.or.jp/js/jquery.balloon.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="/js/html5shiv-printshiv.js"></script>
+<script src="/js/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G3BXVNYV7X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G3BXVNYV7X');
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-57144673-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.spa.or.jp\/onsen_wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.26"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<script type='text/javascript'>
+/* <![CDATA[ */
+window.CKEDITOR_BASEPATH = "https://www.spa.or.jp/onsen_wp/wp-content/plugins/ckeditor-for-wordpress/ckeditor/";
+var ckeditorSettings = { "textarea_id": "comment", "pluginPath": "https:\/\/www.spa.or.jp\/onsen_wp\/wp-content\/plugins\/ckeditor-for-wordpress\/", "autostart": true, "excerpt_state": false, "qtransEnabled": false, "outputFormat": { "indent": true, "breakBeforeOpen": true, "breakAfterOpen": true, "breakBeforeClose": true, "breakAfterClose": true }, "configuration": { "height": "160px", "skin": "moono", "scayt_autoStartup": false, "entities": true, "entities_greek": true, "entities_latin": true, "toolbar": "WordpressBasic", "templates_files": [ "https:\/\/www.spa.or.jp\/onsen_wp\/wp-content\/plugins\/ckeditor-for-wordpress\/ckeditor.templates.js" ], "stylesCombo_stylesSet": "wordpress:https:\/\/www.spa.or.jp\/onsen_wp\/wp-content\/plugins\/ckeditor-for-wordpress\/ckeditor.styles.js", "allowedContent": true, "customConfig": "https:\/\/www.spa.or.jp\/onsen_wp\/wp-content\/plugins\/ckeditor-for-wordpress\/ckeditor.config.js" }, "externalPlugins": [  ], "additionalButtons": [  ] }
+/* ]]> */
+</script><style type="text/css">
+			#content table.cke_editor { margin:0; }
+			#content table.cke_editor tr td { padding:0;border:0; }
+		</style><script type='text/javascript' src='https://www.spa.or.jp/onsen_wp/wp-content/plugins/ckeditor-for-wordpress/ckeditor/ckeditor.js?t=F7J8&#038;ver=4.5.3.3'></script>
+<script type='text/javascript' src='https://www.spa.or.jp/onsen_wp/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.spa.or.jp/onsen_wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.spa.or.jp/onsen_wp/wp-content/plugins/ckeditor-for-wordpress/includes/ckeditor.utils.js?t=F7J8&#038;ver=4.5.3.3'></script>
+<link rel='https://api.w.org/' href='https://www.spa.or.jp/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.spa.or.jp/onsen_wp/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.spa.or.jp/onsen_wp/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.26" />
+<link rel="canonical" href="https://www.spa.or.jp/search_f/" />
+<link rel='shortlink' href='https://www.spa.or.jp/?p=887' />
+<link rel="alternate" type="application/json+oembed" href="https://www.spa.or.jp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.spa.or.jp%2Fsearch_f%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.spa.or.jp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.spa.or.jp%2Fsearch_f%2F&#038;format=xml" />
+</head>
+<body>
+  <h1 id="top"><p>施設検索 | 日本温泉協会</p></h1>
+
+  <!--▼header▼-->
+  <header>
+    <div class="box">
+      <a href="https://www.spa.or.jp/"><img src="https://www.spa.or.jp/img/common/logo.png" alt="日本温泉協会 温泉名人" class="logo"></a>
+
+      <!--▼サブリンク▼-->
+      <ul class="gnavi">
+        <li><a href="https://www.spa.or.jp/#searchwrap"><img src="https://www.spa.or.jp/img/common/h_gnavi_00_off.png" alt="温泉地・施設検索" class="overBtn"></a></li>
+        <li><a href="https://www.spa.or.jp/member/"><img src="https://www.spa.or.jp/img/common/h_gnavi_01_off.png" alt="会員専用ページ" class="overBtn"></a></li>
+        <li><a href="https://www.spa.or.jp/link/"><img src="https://www.spa.or.jp/img/common/h_gnavi_02_off.png" alt="リンク集" class="overBtn"></a></li>
+        <li><a href="https://www.spa.or.jp/sitemap/"><img src="https://www.spa.or.jp/img/common/h_gnavi_03_off.png" alt="サイトMAP" class="overBtn"></a></li>
+        <li><a href="https://www.spa.or.jp/contact/"><img src="https://www.spa.or.jp/img/common/h_gnavi_04_off.png" alt="お問い合わせ" class="overBtn"></a></li>
+        <!--<li><a href="https://www.spa.or.jp/faq/"><img src="https://www.spa.or.jp/img/common/h_gnavi_05_off.png" alt="よくある質問" class="overBtn"></a></li>-->
+      </ul>
+      <!--▲サブリンク▲-->
+      <ul class="foreign_pdf">
+        <li><a href="https://www.spa.or.jp/en/">English（英語）</a></li>
+        <li><a href="//www.spa.or.jp/onsen_wp/wp-content/uploads/2017/10/kantai.pdf" onclick="ga('send', 'event', 'pdf', 'top', 'SC');">中文（簡体字）</a></li>
+        <li><a href="//www.spa.or.jp/onsen_wp/wp-content/uploads/2017/10/hantai.pdf" onclick="ga('send', 'event', 'pdf', 'top', 'TC');">中文（繁体字）</a></li>
+      </ul>
+
+      <!--▼メニュー▼-->
+      <ul class="menu">
+        <li>
+          <a href="https://www.spa.or.jp/association/" class="drop"><img src="https://www.spa.or.jp/img/common/h_menu_01_off.png" alt="日本温泉協会について" class="overBtn"></a>
+          <ul class="info_submenu">
+            <li><a href="https://www.spa.or.jp/association/">概要</a></li>
+            <li><a href="https://www.spa.or.jp/association/activities/">沿革</a></li>
+            <li><a href="https://www.spa.or.jp/association/admission/">入会案内</a></li>
+            <li><a href="https://www.spa.or.jp/company/">会員企業</a></li>
+            <li><a href="https://www.spa.or.jp/association/info/">情報公開</a></li>
+            <!--<li><a href="https://www.spa.or.jp/pdf/member.pdf" target="_blank">日本温泉協会会員一覧[PDF] </a></li>-->
+          </ul>
+        </li>
+        <li><a href="https://www.spa.or.jp/news/"><img src="https://www.spa.or.jp/img/common/h_menu_02_off.png" alt="お知らせ" class="overBtn"></a></li>
+        <!--<li><a href="https://www.spa.or.jp/seminar/"><img src="https://www.spa.or.jp/img/common/h_menu_03_off.png" alt="イベント・セミナー" class="overBtn"></a></li>-->
+        <li><a href="https://www.spa.or.jp/category/onsen/"><img src="https://www.spa.or.jp/img/common/h_menu_04_off.png" alt="温泉百科" class="overBtn"></a></li>
+        <li>
+          <a href="https://www.spa.or.jp/books/" class="drop"><img src="https://www.spa.or.jp/img/common/h_menu_05_off.png" alt="刊行物のご案内" class="overBtn"></a>
+          <ul class="book_submenu">
+            <li><a href="https://www.spa.or.jp/subscription/">「温泉」定期購読</a></li>
+            <li><a href="https://www.spa.or.jp/books_category/mookonsen/">「温泉」バックナンバー</a></li>
+            <li><a href="https://www.spa.or.jp/books_category/elsebook/">その他の刊行物</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="https://www.spa.or.jp/onsenkanban/"><img src="https://www.spa.or.jp/img/common/h_menu_06_off.png" alt="天然温泉表示看板" class="overBtn"></a></li> -->
+      </ul>
+      <!--▲メニュー▲-->
+    </div>
+  </header>
+  <!--▲header▲-->
+
+    <div class="pankuzu">
+    <ul>
+      <li><a href="https://www.spa.or.jp/">日本温泉協会　温泉名人トップ</a></li>
+      <li>施設検索</li>
+    </ul>
+  </div>
+<!-- search_f -->
+
+<!--▼コンテンツ▼-->
+<div id="indexwrap" class="search_f">
+  <div id="content">
+      <div id="content_left">
+      <form action="./" method="GET" name="search1" id="search1">
+       <div class="search_box">
+        <div class="title">
+        <img src="https://www.spa.or.jp/img/search/search_key.png" />
+        </div>
+        <div class="" style="margin:left:auto;">
+            <div class="search">
+                <dl class="item" style="margin:4px;">
+          <dt></dt>
+                  <dd>
+                    <div class="selectbox">
+                      <select name="F_PREFS" id="f_prefs">
+              <option value="" selected="selected">都道府県</option>
+              <option value="北海道" >北海道</option>
+              <option value="青森県" >青森県</option>
+              <option value="岩手県" >岩手県</option>
+              <option value="宮城県" >宮城県</option>
+              <option value="秋田県" >秋田県</option>
+              <option value="山形県" >山形県</option>
+              <option value="福島県" >福島県</option>
+              <option value="茨城県" >茨城県</option>
+              <option value="栃木県" >栃木県</option>
+              <option value="群馬県" >群馬県</option>
+              <option value="埼玉県" >埼玉県</option>
+              <option value="千葉県" >千葉県</option>
+              <option value="東京都" >東京都</option>
+              <option value="神奈川県" >神奈川県</option>
+              <option value="新潟県" >新潟県</option>
+              <option value="富山県" >富山県</option>
+              <option value="石川県" >石川県</option>
+              <option value="福井県" >福井県</option>
+              <option value="山梨県" >山梨県</option>
+              <option value="長野県" >長野県</option>
+              <option value="岐阜県" >岐阜県</option>
+              <option value="静岡県" >静岡県</option>
+              <option value="愛知県" >愛知県</option>
+              <option value="三重県" >三重県</option>
+              <option value="滋賀県" >滋賀県</option>
+              <option value="京都府" >京都府</option>
+              <option value="大阪府" >大阪府</option>
+              <option value="兵庫県" >兵庫県</option>
+              <option value="奈良県" >奈良県</option>
+              <option value="和歌山県" >和歌山県</option>
+              <option value="鳥取県" >鳥取県</option>
+              <option value="島根県" >島根県</option>
+              <option value="岡山県" >岡山県</option>
+              <option value="広島県" >広島県</option>
+              <option value="山口県" >山口県</option>
+              <option value="徳島県" >徳島県</option>
+              <option value="香川県" >香川県</option>
+              <option value="愛媛県" >愛媛県</option>
+              <option value="高知県" >高知県</option>
+              <option value="福岡県" >福岡県</option>
+              <option value="佐賀県" >佐賀県</option>
+              <option value="長崎県" >長崎県</option>
+              <option value="熊本県" >熊本県</option>
+              <option value="大分県" >大分県</option>
+              <option value="宮崎県" >宮崎県</option>
+              <option value="鹿児島県" >鹿児島県</option>
+              <option value="沖縄県" >沖縄県</option>
+                      </select>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="item" style="margin:4px;">
+                    <div class="selectbox gray"  style="display:inline-block;width: 140px;">
+                      <select name="F_QUALITY" id="f_quality" style="width: 140px;">
+                        <option value="" selected="selected">泉質</option>
+              <option value="単純温泉" >単純温泉</option>
+                  <option value="二酸化炭素泉" >二酸化炭素泉</option>
+                  <option value="炭酸水素塩泉" >炭酸水素塩泉</option>
+                  <option value="塩化物泉" >塩化物泉</option>
+                  <option value="硫酸塩泉" >硫酸塩泉</option>
+                  <option value="含鉄泉" >含鉄泉</option>
+                  <option value="含アルミニウム泉" >含アルミニウム泉</option>
+                  <option value="含銅鉄泉" >含銅鉄泉</option>
+                  <option value="硫黄泉" >硫黄泉</option>
+                  <option value="酸性泉" >酸性泉</option>
+                  <option value="放射能泉" >放射能泉</option>
+                  <option value="含よう素泉" >含よう素泉</option>
+                  <option value="その他" >その他</option>
+                      </select>
+            </div>
+                    <div class="selectbox gray"  style="display:inline-block;width: 140px;">
+                      <select name="F_TEMPARATURE" id="f_temparature" style="width: 140px;">
+                        <option value="" selected="selected">泉温</option>
+                  <option value="0" >10℃未満</option>
+                  <option value="10" >10℃～20℃</option>
+                  <option value="20" >20℃～30℃</option>
+                  <option value="30" >30℃～40℃</option>
+                  <option value="40" >40℃～50℃</option>
+                  <option value="50" >50℃～60℃</option>
+                  <option value="60" >60℃～70℃</option>
+                  <option value="70" >70℃～80℃</option>
+                  <option value="80" >80℃～90℃</option>
+                  <option value="90" >90℃～100℃</option>
+                         </select>
+            </div>
+                    <div class="selectbox gray"  style="display:inline-block;width: 140px;">
+                      <select name="F_COLOR" id="f_color" style="width: 140px">
+                          <option value=""  selected="selected">お湯の色</option>
+              <option value="無色透明" >無色透明</option>
+              <option value="白色系" >白色系</option>
+              <option value="緑色系" >緑色系</option>
+              <option value="青色系" >青色系</option>
+              <option value="赤褐色系" >赤褐色系</option>
+              <option value="黄褐色系" >黄褐色系</option>
+              <option value="微黄色" >微黄色</option>
+                      </select>
+                    </div>
+                </dl>
+              <dl class="item border">
+                  <dt style="display:inline-block;width:92px;vertical-align:top;">
+            <img src="https://www.spa.or.jp/img/common/f_menu_02.png" alt="利用方法">利用方法
+          </dt>
+                  <dd style="display:inline-block;">
+            <input type="checkbox" name="F_STAY[]"  value="1"  id="f_stay1" /> <LABEL for="f_stay1">日帰り</LABEL>
+            <input type="checkbox" name="F_STAY[]"  value="2"  id="f_stay2" /> <LABEL for="f_stay2">宿泊</LABEL>
+            <input type="checkbox" name="F_STAY[]"  value="3"  id="f_stay3" /> <LABEL for="f_stay3">素泊まり</LABEL>
+            <input type="checkbox" name="F_STAY[]"  value="4"  id="f_stay4" /> <LABEL for="f_stay4">１名宿泊</LABEL>
+                  </dd>
+                </dl>
+
+                <dl class="item border">
+                  <dt style="display:inline-block;width:92px;vertical-align:top;">
+                      <img src="https://www.spa.or.jp/img/common/f_menu_02.png" alt="施設タイプ">施設タイプ
+                   </dt>
+                  <dd  style="display:inline-block;">
+                      <input type="checkbox" name="F_TYPE[]" value="旅館"  id="f_type1" /> <LABEL for="f_type1">旅館／ホテル</LABEL>
+                      <input type="checkbox" name="F_TYPE[]" value="日帰り温泉"  id="f_type2" /> <LABEL for="f_type2">日帰り温泉</LABEL>
+                  </dd>
+                </dl>
+
+                <dl class="item border">
+                  <dt style="display:inline-block;width:92px;vertical-align:top;">
+                      <img src="https://www.spa.or.jp/img/common/f_menu_02.png" alt="立地環境">立地環境
+                   </dt>
+                  <dd style="display:inline-block;">
+                    <input type="checkbox" name="F_LOCATION[]" value="1"  id="f_location1" /> <LABEL for="f_location1">山麓、山間</LABEL>
+                      <input type="checkbox" name="F_LOCATION[]" value="6"  id="f_location6" /> <LABEL for="f_location6">平地、盆地、田園</LABEL>
+                      <input type="checkbox" name="F_LOCATION[]" value="2"  id="f_location2" /> <LABEL for="f_location2">川辺、河畔、渓谷</LABEL>
+                      <br/>
+                      <input type="checkbox" name="F_LOCATION[]" value="7"  id="f_location7" /> <LABEL for="f_location7">温泉街</LABEL>
+                      <input type="checkbox" name="F_LOCATION[]" value="3"  id="f_location3" /> <LABEL for="f_location3">湖畔、池端</LABEL>
+                      <input type="checkbox" name="F_LOCATION[]" value="8"  id="f_location8" /> <LABEL for="f_location8">市街地</LABEL>
+                      <input type="checkbox" name="F_LOCATION[]" value="4"  id="f_location4" /> <LABEL for="f_location4">海辺</LABEL>
+                      <br/>
+                      <input type="checkbox" name="F_LOCATION[]" value="5"  id="f_location5" /> <LABEL for="f_location5">高台、高原、丘陵</LABEL>
+                      <input type="checkbox" name="F_LOCATION[]" value="9"  id="f_location9" /> <LABEL for="f_location9">その他</LABEL>
+                  </dd>
+                </dl>
+                <dl class="item border">
+                   <dt style="display:inline-block;width:92px;vertical-align:top;">
+                      <img src="https://www.spa.or.jp/img/common/f_menu_02.png" alt="風呂タイプ">風呂タイプ
+                   </dt>
+                  <dd style="display:inline-block;">
+                      <input type="checkbox" name="F_BATH_TYPE[]" value="1"  id="f_bus_type1" /> <LABEL for="f_bus_type1">露天風呂あり</LABEL>
+                      <input type="checkbox" name="F_BATH_TYPE[]" value="2"  id="f_bus_type2" /> <LABEL for="f_bus_type2">貸切風呂あり</LABEL>
+                      <input type="checkbox" name="F_BATH_TYPE[]" value="3"  id="f_bus_type3" /> <LABEL for="f_bus_type3">露天風呂付き客室あり</LABEL>
+                      <br/>
+                      <input type="checkbox" name="F_BATH_TYPE[]" value="4"  id="f_bus_type4" /> <LABEL for="f_bus_type4">掛け流し風呂あり</LABEL>
+                  </dd>
+                </dl>
+                <dl class="item" style="color:#fff;margin:8px 0px;">
+                  <dt style="display:inline-block;width:92px;vertical-align:top;">
+                    <img src="https://www.spa.or.jp/img/common/f_menu_02.png" alt="その他">その他
+                  </dt>
+                  <dd style="display:inline-block;">
+                      <input type="checkbox" name="F_OPT[]" value="1"  id="f_opt1" /> <LABEL for="f_opt1">天然温泉掲示看板あり</LABEL>
+                      <input type="checkbox" name="F_OPT[]" value="2"  id="f_opt2" /> <LABEL for="f_opt2">秘湯の宿</LABEL>
+                  </dd>
+                </dl>
+            </div><!--search-->
+        <div onClick="document.search1.submit();" /><img class="sendbtn" src="https://www.spa.or.jp/img/search/btn_research.png" width="100%" /></div>
+      </div><!--division01_right-->
+    </div><!--division01-->
+      </form>
+
+    <p/>
+<pre></pre>
+<section class="">
+<div class="result">
+  <img src="https://www.spa.or.jp/img/search/result.png" alt="検索結果" />
+  &nbsp;806件の温泉施設が該当しています。
+</div>
+    <ul class="result_item">
+      <li>
+      <!--施設画像-->
+      <a href="./detail_f/?F_ID=1671&pg=0">
+      <img class="photo" src="https://www.spa.or.jp/img/search/noimage_search.png" width="250"/>
+      </a>
+      <div class="article">
+      <div class="location"><span style="font-weight:bold;">寒の地獄温泉</span> (大分県 玖珠郡九重町)</div>
+      <div class="name"><a href="./detail_f/?F_ID=1671&pg=0">寒の地獄旅館</a></div>
+      <!--特色-->
+      <div class="feature">江戸末期開湯 冷泉と薪炊き温泉の宿</div>
+      <!--泉質-->
+      <div class="spa_quality">
+        <img src="https://www.spa.or.jp/img/search/spa_quality.png"/>
+        硫黄泉                      </div>
+      <!--泉温-->
+      <div class="spa_temp">
+        <img src="https://www.spa.or.jp/img/search/spa_temp.png"/>
+        13.6℃                
+        <!--泉色-->
+        <img src="https://www.spa.or.jp/img/search/spa_color.png"/>
+        無色透明                      </div>
+      <!--属性-->
+      <div class="attribute">
+        <span class="label">山麓、山間</span>
+        <span class="label">日帰り入浴</span>
+        <span class="label">掛け流し風呂</span>
+        <span class="label">貸切浴場</span>
+        <span class="label">秘湯</span>
+      </div>
+      </div><!--end article-->
+      <div class="clear"></div>
+      </li>
+    </ul>
+    <ul class="result_item">
+      <li>
+      <!--施設画像-->
+      <a href="./detail_f/?F_ID=1484&pg=0">
+      <img class="photo" src="/img_higaeri/A08001/1.jpg" width="250" />
+      </a>
+      <div class="article">
+      <div class="location"><span style="font-weight:bold;">大子町</span> (茨城県 久慈郡大子町)</div>
+      <div class="name"><a href="./detail_f/?F_ID=1484&pg=0">大子温泉保養センター  森林の温泉</a></div>
+      <!--特色-->
+      <div class="feature">四季折々の大自然を眺めながらゆったりできる大露天風呂。</div>
+      <!--泉質-->
+      <div class="spa_quality">
+        <img src="https://www.spa.or.jp/img/search/spa_quality.png"/>
+        硫酸塩泉                      </div>
+      <!--泉温-->
+      <div class="spa_temp">
+        <img src="https://www.spa.or.jp/img/search/spa_temp.png"/>
+        31.4℃                
+        <!--泉色-->
+        <img src="https://www.spa.or.jp/img/search/spa_color.png"/>
+        無色透明                      </div>
+      <!--属性-->
+      <div class="attribute">
+        <span class="label">山麓、山間</span>
+        <span class="label">日帰り入浴</span>
+        <span class="label">露天風呂</span>
+      </div>
+      </div><!--end article-->
+      <div class="clear"></div>
+      </li>
+    </ul>
+    <ul class="result_item">
+      <li>
+      <!--施設画像-->
+      <a href="./detail_f/?F_ID=1720&pg=0">
+      <img class="photo" src="/img_higaeri/A10002/1.jpg" width="250" />
+      </a>
+      <div class="article">
+      <div class="location"><span style="font-weight:bold;">猿ヶ京温泉(猿ヶ京三国温泉郷)</span> (群馬県 利根郡みなかみ町)</div>
+      <div class="name"><a href="./detail_f/?F_ID=1720&pg=0">まんてん星の湯</a></div>
+      <!--特色-->
+      <div class="feature">赤谷湖の四季折々の美しい景観を眺めながら源泉かけ流しの露天風呂で心と身体を癒やす</div>
+      <!--泉質-->
+      <div class="spa_quality">
+        <img src="https://www.spa.or.jp/img/search/spa_quality.png"/>
+        硫酸塩泉        ,硫酸塩泉              </div>
+      <!--泉温-->
+      <div class="spa_temp">
+        <img src="https://www.spa.or.jp/img/search/spa_temp.png"/>
+        61.5℃        ,57.5℃        
+        <!--泉色-->
+        <img src="https://www.spa.or.jp/img/search/spa_color.png"/>
+        無色透明        ,無色透明              </div>
+      <!--属性-->
+      <div class="attribute">
+        <span class="label">高台、高原、丘陵</span>
+        <span class="label">日帰り入浴</span>
+        <span class="label">露天風呂</span>
+        <span class="label">掛け流し風呂</span>
+        <span class="label">貸切浴場</span>
+      </div>
+      </div><!--end article-->
+      <div class="clear"></div>
+      </li>
+    </ul>
+    <ul class="result_item">
+      <li>
+      <!--施設画像-->
+      <a href="./detail_f/?F_ID=1422&pg=0">
+      <img class="photo" src="/img_higaeri/A10006/1.jpg" width="250" />
+      </a>
+      <div class="article">
+      <div class="location"><span style="font-weight:bold;">小野上温泉</span> (群馬県 渋川市)</div>
+      <div class="name"><a href="./detail_f/?F_ID=1422&pg=0">小野上温泉センター</a></div>
+      <!--特色-->
+      <div class="feature">吾妻川河畔に湧く「塩川温泉」（旧名）は、昭和56年、旧小野上村の村営「小野上温泉センター」として誕生しました。平成20年には、新しい小野上温泉センターになり、泉質の良さをそのままに施設の環境や機能性が向上しています。</div>
+      <!--泉質-->
+      <div class="spa_quality">
+        <img src="https://www.spa.or.jp/img/search/spa_quality.png"/>
+        塩化物泉                      </div>
+      <!--泉温-->
+      <div class="spa_temp">
+        <img src="https://www.spa.or.jp/img/search/spa_temp.png"/>
+        46.8℃                
+        <!--泉色-->
+        <img src="https://www.spa.or.jp/img/search/spa_color.png"/>
+        無色透明                      </div>
+      <!--属性-->
+      <div class="attribute">
+        <span class="label">川辺、河畔、渓谷</span>
+        <span class="label">日帰り入浴</span>
+        <span class="label">露天風呂</span>
+      </div>
+      </div><!--end article-->
+      <div class="clear"></div>
+      </li>
+    </ul>
+    <ul class="result_item">
+      <li>
+      <!--施設画像-->
+      <a href="./detail_f/?F_ID=1714&pg=0">
+      <img class="photo" src="/img_higaeri/A10006-2/1.jpg" width="250" />
+      </a>
+      <div class="article">
+      <div class="location"><span style="font-weight:bold;">渋川温泉</span> (群馬県 渋川市)</div>
+      <div class="name"><a href="./detail_f/?F_ID=1714&pg=0">花湯スカイテルメリゾート</a></div>
+      <!--特色-->
+      <div class="feature">北関東最大級の温活カフェ</div>
+      <!--泉質-->
+      <div class="spa_quality">
+        <img src="https://www.spa.or.jp/img/search/spa_quality.png"/>
+        塩化物泉                      </div>
+      <!--泉温-->
+      <div class="spa_temp">
+        <img src="https://www.spa.or.jp/img/search/spa_temp.png"/>
+        61.8℃                
+        <!--泉色-->
+        <img src="https://www.spa.or.jp/img/search/spa_color.png"/>
+        無色透明                      </div>
+      <!--属性-->
+      <div class="attribute">
+        <span class="label">平地、盆地、田園</span>
+        <span class="label">日帰り入浴</span>
+        <span class="label">露天風呂</span>
+        <span class="label">掛け流し風呂</span>
+        <span class="label">源泉所有</span>
+      </div>
+      </div><!--end article-->
+      <div class="clear"></div>
+      </li>
+    </ul>
+    <ul class="result_item">
+      <li>
+      <!--施設画像-->
+      <a href="./detail_f/?F_ID=1715&pg=0">
+      <img class="photo" src="/img_higaeri/A10006-3/1.jpg" width="250" />
+      </a>
+      <div class="article">
+      <div class="location"><span style="font-weight:bold;">北橘温泉</span> (群馬県 渋川市)</div>
+      <div class="name"><a href="./detail_f/?F_ID=1715&pg=0">北橘温泉ばんどうの湯　</a></div>
+      <!--特色-->
+      <div class="feature">眺望抜群の位置にあり特に夜景が美しく、渋川・伊香保方面の市街パノラマは見事です。</div>
+      <!--泉質-->
+      <div class="spa_quality">
+        <img src="https://www.spa.or.jp/img/search/spa_quality.png"/>
+        塩化物泉                      </div>
+      <!--泉温-->
+      <div class="spa_temp">
+        <img src="https://www.spa.or.jp/img/search/spa_temp.png"/>
+        60.4℃                
+        <!--泉色-->
+        <img src="https://www.spa.or.jp/img/search/spa_color.png"/>
+        無色透明                      </div>
+      <!--属性-->
+      <div class="attribute">
+        <span class="label">山麓、山間</span>
+        <span class="label">日帰り入浴</span>
+        <span class="label">露天風呂</span>
+        <span class="label">掛け流し風呂</span>
+        <span class="label">源泉所有</span>
+        <span class="label">貸切浴場</span>
+      </div>
+      </div><!--end article-->
+      <div class="clear"></div>
+      </li>
+    </ul>
+    <ul class="result_item">
+      <li>
+      <!--施設画像-->
+      <a href="./detail_f/?F_ID=1716&pg=0">
+      <img class="photo" src="/img_higaeri/A10006-4/1.jpg" width="250" />
+      </a>
+      <div class="article">
+      <div class="location"><span style="font-weight:bold;">敷島温泉</span> (群馬県 渋川市)</div>
+      <div class="name"><a href="./detail_f/?F_ID=1716&pg=0">ユートピア赤城</a></div>
+      <!--特色-->
+      <div class="feature">大海原に漕ぎ出ようとする船を思わせるたたずまい。</div>
+      <!--泉質-->
+      <div class="spa_quality">
+        <img src="https://www.spa.or.jp/img/search/spa_quality.png"/>
+        単純温泉                      </div>
+      <!--泉温-->
+      <div class="spa_temp">
+        <img src="https://www.spa.or.jp/img/search/spa_temp.png"/>
+        45.5℃                
+        <!--泉色-->
+        <img src="https://www.spa.or.jp/img/search/spa_color.png"/>
+        無色透明                      </div>
+      <!--属性-->
+      <div class="attribute">
+        <span class="label">平地、盆地、田園</span>
+        <span class="label">日帰り入浴</span>
+        <span class="label">露天風呂</span>
+        <span class="label">源泉所有</span>
+      </div>
+      </div><!--end article-->
+      <div class="clear"></div>
+      </li>
+    </ul>
+    <ul class="result_item">
+      <li>
+      <!--施設画像-->
+      <a href="./detail_f/?F_ID=1717&pg=0">
+      <img class="photo" src="/img_higaeri/A10006-5/1.jpg" width="250" />
+      </a>
+      <div class="article">
+      <div class="location"><span style="font-weight:bold;">伊香保温泉</span> (群馬県 渋川市)</div>
+      <div class="name"><a href="./detail_f/?F_ID=1717&pg=0">渋川市伊香保温泉浴場「石段の湯」</a></div>
+      <!--特色-->
+      <div class="feature">石段街のすぐ脇にある日帰り温泉施設。伊香保温泉黄金の湯の源泉を掛け流しています。</div>
+      <!--泉質-->
+      <div class="spa_quality">
+        <img src="https://www.spa.or.jp/img/search/spa_quality.png"/>
+        硫酸塩泉                      </div>
+      <!--泉温-->
+      <div class="spa_temp">
+        <img src="https://www.spa.or.jp/img/search/spa_temp.png"/>
+        41.6℃                
+        <!--泉色-->
+        <img src="https://www.spa.or.jp/img/search/spa_color.png"/>
+        茶褐色                      </div>
+      <!--属性-->
+      <div class="attribute">
+        <span class="label">温泉街</span>
+        <span class="label">日帰り入浴</span>
+        <span class="label">掛け流し風呂</span>
+      </div>
+      </div><!--end article-->
+      <div class="clear"></div>
+      </li>
+    </ul>
+    <ul class="result_item">
+      <li>
+      <!--施設画像-->
+      <a href="./detail_f/?F_ID=1719&pg=0">
+      <img class="photo" src="/img_higaeri/A10006-7/1.jpg" width="250" />
+      </a>
+      <div class="article">
+      <div class="location"><span style="font-weight:bold;">白井温泉</span> (群馬県 渋川市)</div>
+      <div class="name"><a href="./detail_f/?F_ID=1719&pg=0">白井温泉こもちの湯</a></div>
+      <!--特色-->
+      <div class="feature">自家源泉掛け流しの内湯を備えた日帰り温泉施設です。入浴料もリーズナブルです。</div>
+      <!--泉質-->
+      <div class="spa_quality">
+        <img src="https://www.spa.or.jp/img/search/spa_quality.png"/>
+        単純温泉                      </div>
+      <!--泉温-->
+      <div class="spa_temp">
+        <img src="https://www.spa.or.jp/img/search/spa_temp.png"/>
+        38.5℃                
+        <!--泉色-->
+        <img src="https://www.spa.or.jp/img/search/spa_color.png"/>
+        無色透明                      </div>
+      <!--属性-->
+      <div class="attribute">
+        <span class="label">平地、盆地、田園</span>
+        <span class="label">日帰り入浴</span>
+        <span class="label">露天風呂</span>
+        <span class="label">掛け流し風呂</span>
+        <span class="label">源泉所有</span>
+      </div>
+      </div><!--end article-->
+      <div class="clear"></div>
+      </li>
+    </ul>
+    <ul class="result_item">
+      <li>
+      <!--施設画像-->
+      <a href="./detail_f/?F_ID=1774&pg=0">
+      <img class="photo" src="/img_higaeri/A15004/1.jpg" width="250" />
+      </a>
+      <div class="article">
+      <div class="location"><span style="font-weight:bold;">さくらんど温泉</span> (新潟県 五泉市)</div>
+      <div class="name"><a href="./detail_f/?F_ID=1774&pg=0">五泉市村松さくらんど温泉</a></div>
+      <!--特色-->
+      <div class="feature">情緒たっぷりの露天風呂</div>
+      <!--泉質-->
+      <div class="spa_quality">
+        <img src="https://www.spa.or.jp/img/search/spa_quality.png"/>
+        塩化物泉                      </div>
+      <!--泉温-->
+      <div class="spa_temp">
+        <img src="https://www.spa.or.jp/img/search/spa_temp.png"/>
+        37.8℃                
+        <!--泉色-->
+        <img src="https://www.spa.or.jp/img/search/spa_color.png"/>
+        無色透明                      </div>
+      <!--属性-->
+      <div class="attribute">
+        <span class="label">平地、盆地、田園</span>
+        <span class="label">日帰り入浴</span>
+        <span class="label">露天風呂</span>
+        <span class="label">掛け流し風呂</span>
+      </div>
+      </div><!--end article-->
+      <div class="clear"></div>
+      </li>
+    </ul>
+</section>
+<nav>
+  <span class="page-numbers current">1</span>
+  <a class='page-numbers' href="./?pg=1">2</a>
+  <a class='page-numbers' href="./?pg=2">3</a>
+  <a class='page-numbers' href="./?pg=3">4</a>
+  <a class='page-numbers' href="./?pg=4">5</a>
+      <span class="page-numbers dots">…</span>
+  <a class='page-numbers' href="./?pg=80">81</a>
+    <a class="next page-numbers" href="./?pg=1">＞</a>
+</nav>
+
+
+    </div>
+    <div id="content_right">
+      
+
+<div id="content_right">
+  <div class="bannerarea_upper">
+    <ul>
+      <li><a href="https://www.spa.or.jp/osusume_no_yado2/list_index.htm"><img src="https://www.spa.or.jp/img/common/side/ban_osusume.jpg" alt="おすすめの宿"></a></li>
+      <li><a href="http://www.kamiyamada-onsen.co.jp/" target="_blank" rel="nofollow"><img src="https://www.spa.or.jp/img/common/side/bnr_kamiyamada_onsen.jpg" alt="戸倉上山田温泉"></a></li>
+      <li><a href="http://www.gero-spa.com/" target="_blank" rel="nofollow"><img src="https://www.spa.or.jp/img/common/side/ban_gero-spa.jpg" alt="下呂温泉観光協会"></a></li>
+      <li><a href="https://www.maniwa.or.jp/yubara/" target="_blank" rel="nofollow"><img src="https://www.spa.or.jp/img/common/side/ban_yubara.jpg" alt="湯原町観光協会"></a></li>
+      <li><a href="https://yasuragi.buyshop.jp/" target="_blank"><img src="https://www.spa.or.jp/img/common/side/ban_yasuragi.jpg" alt="飲むプレミアム温泉水"></a></li>
+      <li><a href="https://www.kannon-onsen.com/" target="_blank"><img src="https://www.spa.or.jp/img/common/side/04_24_kannon.jpg" alt="伊豆奥下田 観音温泉"></a></li>
+      <li><a href="https://offandrelax.jp/" target="_blank"><img src="https://www.spa.or.jp/img/common/side/bnr_o-and-r.jpg" alt="温泉水発想のスカルプケア Off & Relax"></a></li>
+    </ul>
+  </div>
+  <p>
+    <a href="https://www.spa.or.jp/kokumin_spa/"><img src="https://www.spa.or.jp/img/common/side/kokumin1.jpg" alt="国民保養温泉地一覧"></a>
+    <a href="https://www.spa.or.jp/kokumin_spa/about/"><img src="https://www.spa.or.jp/img/common/side/kokumin2.png" alt="国民保養温泉地とは？"></a>
+  </p>
+    <!-- 検索フォーム -->
+  <div id="searchfrm_min">
+    <ul class="tabs">
+      <li name="yado" class="act" id="tab_yado">宿検索</li>
+      <li name="spring" id="tab_spring">温泉検索</li>
+    </ul>
+    <div class="searchfrm_min_bdy">
+      <div id="yado" class="frm_wrap">
+        <div class="upper">
+          <form action="https://www.spa.or.jp/search_f/" method="get" name="min_search_yado1">
+            <div class="selectbox">
+              <select name="F_PREFS" id="f_prefs_min">
+                <option value="">都道府県</option>
+                <option value="北海道">北海道</option>
+                <option value="青森県">青森県</option>
+                <option value="岩手県">岩手県</option>
+                <option value="宮城県">宮城県</option>
+                <option value="秋田県">秋田県</option>
+                <option value="山形県">山形県</option>
+                <option value="福島県">福島県</option>
+                <option value="茨城県">茨城県</option>
+                <option value="栃木県">栃木県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="東京都">東京都</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="新潟県">新潟県</option>
+                <option value="富山県">富山県</option>
+                <option value="石川県">石川県</option>
+                <option value="福井県">福井県</option>
+                <option value="山梨県">山梨県</option>
+                <option value="長野県">長野県</option>
+                <option value="岐阜県">岐阜県</option>
+                <option value="静岡県">静岡県</option>
+                <option value="愛知県">愛知県</option>
+                <option value="三重県">三重県</option>
+                <option value="滋賀県">滋賀県</option>
+                <option value="京都府">京都府</option>
+                <option value="大阪府">大阪府</option>
+                <option value="兵庫県">兵庫県</option>
+                <option value="奈良県">奈良県</option>
+                <option value="和歌山県">和歌山県</option>
+                <option value="鳥取県">鳥取県</option>
+                <option value="島根県">島根県</option>
+                <option value="岡山県">岡山県</option>
+                <option value="広島県">広島県</option>
+                <option value="山口県">山口県</option>
+                <option value="徳島県">徳島県</option>
+                <option value="香川県">香川県</option>
+                <option value="愛媛県">愛媛県</option>
+                <option value="高知県">高知県</option>
+                <option value="福岡県">福岡県</option>
+                <option value="佐賀県">佐賀県</option>
+                <option value="長崎県">長崎県</option>
+                <option value="熊本県">熊本県</option>
+                <option value="大分県">大分県</option>
+                <option value="宮崎県">宮崎県</option>
+                <option value="鹿児島県">鹿児島県</option>
+                <option value="沖縄県">沖縄県</option>
+              </select>
+            </div>
+            <dl>
+              <dt>入浴設備</dt>
+              <dd>
+                <label><input type="checkbox" name="F_BATH_TYPE[]" value="1">露天風呂</label>
+                <label><input type="checkbox" name="F_BATH_TYPE[]" value="2">貸切風呂</label>
+              </dd>
+              <dt>日帰り／宿泊</dt>
+              <dd>
+                <label><input type="checkbox" name="F_STAY[]"  value="1">日帰り</label>
+                <label><input type="checkbox" name="F_STAY[]"  value="2">宿泊</label>
+              </dd>
+              <dt>施設タイプ</dt>
+              <dd>
+                <label><input type="checkbox" name="F_TYPE[]" value="旅館">旅館/ホテル</label>
+                <label><input type="checkbox" name="F_TYPE[]" value="日帰り温泉">日帰温泉</label>
+              </dd>
+              <dd>
+                <label><input type="checkbox" name="F_OPT[]"  value="1">天然温泉表示看板掲示施設</label>
+              </dd>
+            </dl>
+            <div class="selectbox">
+              <select name="F_QUALITY" id="f_quality_min">
+                <option value="" selected="selected">泉質を選ぶ</option>
+                <option value="単純温泉" >単純温泉</option>
+                <option value="二酸化炭素泉" >二酸化炭素泉</option>
+                <option value="炭酸水素塩泉" >炭酸水素塩泉</option>
+                <option value="塩化物泉" >塩化物泉</option>
+                <option value="硫酸塩泉" >硫酸塩泉</option>
+                <option value="含鉄泉" >含鉄泉</option>
+                <option value="含アルミニウム泉" >含アルミニウム泉</option>
+                <option value="含銅鉄泉" >含銅鉄泉</option>
+                <option value="硫黄泉" >硫黄泉</option>
+                <option value="酸性泉" >酸性泉</option>
+                <option value="放射能泉" >放射能泉</option>
+                <option value="含よう素泉" >含よう素泉</option>
+                <option value="その他" >その他</option>
+              </select>
+            </div>
+            <p class="btnarea alignC"><span id="sendbtn2" onClick="document.min_search_yado1.submit();"><img src="https://www.spa.or.jp/img/common/side/search_btn1.png" alt="検索する"></span></p>
+          </form>
+        </div>
+        <div class="lower">
+          <form action="https://www.spa.or.jp/search_f/" method="get" name="min_search_yado2">
+            <dl>
+              <dt>キーワード</dt>
+              <dd>
+                <input type="text" name="F_KEYWORD" id="frm_min_h_keyword" maxlength="200" value="旅館、温泉地名など" />
+              </dd>
+            </dl>
+            <p class="btnarea alignC"><span id="sendbtn2" onClick="document.min_search_yado2.submit();"><img src="https://www.spa.or.jp/img/common/side/search_btn2.png" alt="検索する"></span></p>
+          </form>
+        </div>
+      </div>
+      <div id="spring" class="frm_wrap">
+        <div class="upper">
+          <form action="https://www.spa.or.jp/search_p/" method="get" name="min_search_spa1">
+            <div class="selectbox">
+              <select name="F_PREFS" id="f_prefs_min_spring">
+                <option value="">都道府県</option>
+                <option value="北海道">北海道</option>
+                <option value="青森県">青森県</option>
+                <option value="岩手県">岩手県</option>
+                <option value="宮城県">宮城県</option>
+                <option value="秋田県">秋田県</option>
+                <option value="山形県">山形県</option>
+                <option value="福島県">福島県</option>
+                <option value="茨城県">茨城県</option>
+                <option value="栃木県">栃木県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="東京都">東京都</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="新潟県">新潟県</option>
+                <option value="富山県">富山県</option>
+                <option value="石川県">石川県</option>
+                <option value="福井県">福井県</option>
+                <option value="山梨県">山梨県</option>
+                <option value="長野県">長野県</option>
+                <option value="岐阜県">岐阜県</option>
+                <option value="静岡県">静岡県</option>
+                <option value="愛知県">愛知県</option>
+                <option value="三重県">三重県</option>
+                <option value="滋賀県">滋賀県</option>
+                <option value="京都府">京都府</option>
+                <option value="大阪府">大阪府</option>
+                <option value="兵庫県">兵庫県</option>
+                <option value="奈良県">奈良県</option>
+                <option value="和歌山県">和歌山県</option>
+                <option value="鳥取県">鳥取県</option>
+                <option value="島根県">島根県</option>
+                <option value="岡山県">岡山県</option>
+                <option value="広島県">広島県</option>
+                <option value="山口県">山口県</option>
+                <option value="徳島県">徳島県</option>
+                <option value="香川県">香川県</option>
+                <option value="愛媛県">愛媛県</option>
+                <option value="高知県">高知県</option>
+                <option value="福岡県">福岡県</option>
+                <option value="佐賀県">佐賀県</option>
+                <option value="長崎県">長崎県</option>
+                <option value="熊本県">熊本県</option>
+                <option value="大分県">大分県</option>
+                <option value="宮崎県">宮崎県</option>
+                <option value="鹿児島県">鹿児島県</option>
+                <option value="沖縄県">沖縄県</option>
+              </select>
+            </div>
+            <div class="selectbox">
+              <select name="F_QUALITY" id="f_quality_spring">
+                <option value="" selected="selected">泉質</option>
+                <option value="単純温泉" >単純温泉</option>
+                <option value="二酸化炭素泉" >二酸化炭素泉</option>
+                <option value="炭酸水素塩泉" >炭酸水素塩泉</option>
+                <option value="塩化物泉" >塩化物泉</option>
+                <option value="硫酸塩泉" >硫酸塩泉</option>
+                <option value="含鉄泉" >含鉄泉</option>
+                <option value="含アルミニウム泉" >含アルミニウム泉</option>
+                <option value="含銅鉄泉" >含銅鉄泉</option>
+                <option value="硫黄泉" >硫黄泉</option>
+                <option value="酸性泉" >酸性泉</option>
+                <option value="放射能泉" >放射能泉</option>
+                <option value="含よう素泉" >含よう素泉</option>
+                <option value="その他" >その他</option>
+              </select>
+            </div>
+            <p class="alignR">
+              <label><input type="checkbox" name="F_CATEGORY" value="1">国民保養温泉地のみ</label>
+            </p>
+            <p class="btnarea alignC"><span id="sendbtn2" onClick="document.min_search_spa1.submit();"><img src="https://www.spa.or.jp/img/common/side/search_btn1.png" alt="検索する"></span></p>
+          </form>
+        </div>
+        <div class="lower">
+          <form action="https://www.spa.or.jp/search_p/" method="get" name="min_search_spa2">
+            <dl>
+              <dt>キーワード</dt>
+              <dd>
+              <input type="text" name="F_KEYWORD" id="frm_min_s_keyword" maxlength="200" value="温泉地名など" />
+              </dd>
+            </dl>
+            <p class="btnarea alignC"><span id="sendbtn2" onClick="document.min_search_spa2.submit();"><img src="https://www.spa.or.jp/img/common/side/search_btn2.png" alt="検索する"></span></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //検索フォーム -->
+    <div class="bannerarea">
+    <ul>
+      <li><a href="https://hisaka-magokoro.com/shop/pages/hotspring.aspx?utm_medium=banner&utm_source=OnsenAssociation" rel="nofollow"><img src="https://www.spa.or.jp/img/common/side/bnr_hisaka.jpg" alt="株式会社 日阪製作所"></a></li>
+      <li><a href="https://onsen-gastronomy.com/" target="_blank"><img src="https://www.spa.or.jp/img/common/side/bnr_onsen_plus.jpg" alt="ONSEN＋"></a></li>
+      <li><a href="https://www.env.go.jp/nature/onsen/spa/spa_team.html" target="_blank"><img src="https://www.spa.or.jp/img/common/side/spa_team_bnr.gif" alt="チーム 新・湯治"></a></li>
+      <li><a href="https://www.spa.or.jp/geo/"><img src="https://www.spa.or.jp/img/common/side/geo.jpg" alt="地熱発電特集"></a></li>
+      <li><a href="http://www.hitou.or.jp/" target="_blank" rel="nofollow"><img src="https://www.spa.or.jp/img/common/side/ban_hitou.jpg" alt="日本秘湯を守る会"></a></li>
+      <li><a href="https://www.spa.or.jp/books/elsebook/4137/" rel="nofollow"><img src="https://www.spa.or.jp/img/common/side/ban_onsenkentei2.png" alt="日本温泉名人認定試験 温泉検定テキスト"></a></li>
+      <li><a href="https://www.spa.or.jp/company/" rel="nofollow"><img src="https://www.spa.or.jp/img/common/side/bnr_member_company.png" alt="日本温泉協会 会員企業"></a></li>
+      <li><a href="https://www.spa.or.jp/news/else/2323/" rel="nofollow"><img src="https://www.spa.or.jp/img/common/side/bnr_ad_recruitment.jpg" alt="バナー広告募集中 日本温泉協会 詳細はこちら"></a></li>
+    </ul>
+  </div>
+</div>
+    </div>
+  </div>
+  
+</div>
+<!--▲コンテンツ▲-->
+
+<p class="page_top footer_above"><a href="#top"><img src="https://www.spa.or.jp/img/common/page_top_off.png" alt="page top" class="overBtn"></a></p>
+<footer>
+	<div class="upper">
+		<div class="box">
+			<ul class="sns">
+				<li><a href="http://www.facebook.com/share.php?u=https://www.spa.or.jp/" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><img src="https://www.spa.or.jp/img/common/sns_icon_01_off.png" alt="フェイスブック" class="overBtn"></a></li>
+				<li><a href="http://twitter.com/share?url=https://www.spa.or.jp/&text=#日本温泉協会"><img src="https://www.spa.or.jp/img/common/sns_icon_02_off.png" alt="ツイッター" class="overBtn"></a></li>
+				<li><a href="https://plus.google.com/share?url=https://www.spa.or.jp/" onclick="window.open(this.href, 'Gwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><img src="https://www.spa.or.jp/img/common/sns_icon_03_off.png" alt="グーグルプラス" class="overBtn"></a></li>
+			</ul>
+
+			<!--▼サブリンク▼-->
+			<ul class="menu">
+				<li class="li01"><a href="https://www.spa.or.jp/association/">日本温泉協会について</a></li>
+				<li class="li02"><a href="https://www.spa.or.jp/news/">お知らせ</a></li>
+				<!--<li class="li03"><a href="https://www.spa.or.jp/seminar/">イベント・セミナー</a></li>-->
+				<li class="li04"><a href="https://www.spa.or.jp/category/onsen/">温泉百科</a></li>
+				<li class="li05"><a href="https://www.spa.or.jp/books/">刊行物のご案内</a></li>
+				<!-- <li class="li06"><a href="https://www.spa.or.jp/onsenkanban/">天然温泉表示制度</a></li> -->
+			</ul>
+			<!--▲サブリンク▲-->
+
+			<!--▼メニュー▼-->
+			<ul class="gnavi">
+				<li class="li07"><a href="https://www.spa.or.jp/#searchwrap">温泉地・施設検索</a></li>
+				<li class="li01"><a href="https://www.spa.or.jp/kokumin/">国民保養温泉地</a></li>
+				<li class="li02"><a href="https://www.spa.or.jp/member/">会員専用ページ</a></li>
+				<li class="li03"><a href="https://www.spa.or.jp/link/">リンク集</a></li>
+				<li class="li04"><a href="https://www.spa.or.jp/sitemap/">サイトマップ</a></li>
+				<li class="li05"><a href="https://www.spa.or.jp/contact/">お問合せフォーム</a></li>
+				<!--<li class="li06"><a href="https://www.spa.or.jp/faq/">よくある質問</a></li>-->
+			</ul>
+			<!--▲メニュー▲-->
+		</div>
+	</div>
+	
+<div class="under">
+	<div class="box">
+		<img src="https://www.spa.or.jp/img/common/f_logo.png" class="logo" alt="一般社団法人　日本温泉協会">
+		<div>
+		<p class="add">〒102-0093　東京都千代田区平河町2-5-5　全国旅館会館3階</p>
+		<p class="tel pconly"><img src="https://www.spa.or.jp/img/common/tel_num.png" alt="03-6261-2180" /></p>
+		<p class="tel sponly"><a href="tel:0362612180">03-6261-2180</a></p>
+		<p class="copy">Copyright &#169; 2026 JAPAN ONSEN ASSOCIATION HOT SPRING OF JAPAN All Rights Reserved.</p>
+		</div>
+	</div>
+</div></footer>
+<script type='text/javascript' src='https://www.spa.or.jp/onsen_wp/wp-includes/js/wp-embed.min.js?ver=4.9.26'></script>
+</body>
+</html>

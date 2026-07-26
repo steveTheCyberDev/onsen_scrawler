@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "onsen-scrawler": {
+      "command": "uv",
+      "args": ["run", "onsen-scrawler-mcp"],
+      "cwd": "/Users/jiajunzhang/Documents/Python Projects/onsen_scrawler"
+    }
+  }
+}
