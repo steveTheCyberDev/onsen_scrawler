@@ -1,0 +1,31 @@
+{{- if .Values.scrape.enabled }}
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "onsen-scrawler.name" . }}-scrape
+  labels:
+    {{- include "onsen-scrawler.labels" . | nindent 4 }}
+spec:
+  schedule: {{ .Values.scrape.schedule | quote }}
+  concurrencyPolicy: {{ .Values.scrape.concurrencyPolicy }}
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 1
+      template:
+        metadata:
+          labels:
+            {{- include "onsen-scrawler.labels" . | nindent 12 }}
+        spec:
+          {{- include "onsen-scrawler.podCommon" . | nindent 10 }}
+          containers:
+            - name: scrape
+              {{- include "onsen-scrawler.containerCommon" . | nindent 14 }}
+              command:
+                {{- toYaml .Values.scrape.command | nindent 16 }}
+              {{- with .Values.scrape.args }}
+              args:
+                {{- toYaml . | nindent 16 }}
+              {{- end }}
+{{- end }}

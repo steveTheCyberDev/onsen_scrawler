@@ -1,0 +1,33 @@
+{{- if .Values.schemaJob.enabled }}
+# Helm pre-install/pre-upgrade hooks are run by Argo CD as PreSync hooks.
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ include "onsen-scrawler.name" . }}-schema
+  labels:
+    {{- include "onsen-scrawler.labels" . | nindent 4 }}
+  annotations:
+    helm.sh/hook: pre-install,pre-upgrade
+    helm.sh/hook-delete-policy: before-hook-creation,hook-succeeded
+spec:
+  backoffLimit: 3
+  ttlSecondsAfterFinished: 600
+  template:
+    metadata:
+      labels:
+        {{- include "onsen-scrawler.labels" . | nindent 8 }}
+    spec:
+      {{- include "onsen-scrawler.podCommon" . | nindent 6 }}
+      containers:
+        - name: schema
+          {{- include "onsen-scrawler.containerCommon" . | nindent 10 }}
+          command:
+            - python
+            - -c
+            - |
+              import os, psycopg
+              sql = open("/app/schema.sql", encoding="utf-8").read()
+              with psycopg.connect(os.environ["DATABASE_URL"]) as conn:
+                  conn.execute(sql)
+              print("Schema applied.")
+{{- end }}

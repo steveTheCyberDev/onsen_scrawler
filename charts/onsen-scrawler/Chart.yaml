@@ -1,0 +1,6 @@
+apiVersion: v2
+name: onsen-scrawler
+description: Onsen (温泉) scraper - schema-init Job and scrape CronJob writing to Postgres
+type: application
+version: 0.1.0
+appVersion: "latest"

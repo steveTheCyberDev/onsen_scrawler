@@ -1,0 +1,45 @@
+image:
+  repository: ghcr.io/stevethecyberdev/onsen_scrawler
+  # CI pushes `latest` and `sha-<full-sha>`; pin a sha tag for reproducible deploys.
+  tag: latest
+  pullPolicy: Always
+
+# Needed if the GHCR package is private.
+imagePullSecrets: []
+
+database:
+  # Pre-existing Secret holding the connection string. It must exist before the
+  # first sync because the schema Job runs as a PreSync hook, so the chart does
+  # not create it (keep real credentials out of git).
+  existingSecret: onsen-db
+  secretKey: DATABASE_URL
+
+# Applies schema.sql (idempotent, CREATE ... IF NOT EXISTS) before each sync.
+schemaJob:
+  enabled: true
+
+# Periodic region scrape. Disabled until the image can scrape in-cluster:
+# region_scraper.py reads data/regions.jsonl, which is not baked into the image.
+scrape:
+  enabled: false
+  schedule: "0 18 * * 0"   # Sundays 18:00 UTC
+  concurrencyPolicy: Forbid
+  command: ["onsen-scrawler", "--help"]
+  args: []
+
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 1000   # the `app` user created in the Dockerfile
+
+containerSecurityContext:
+  allowPrivilegeEscalation: false
+  readOnlyRootFilesystem: true
+  capabilities:
+    drop: [ALL]
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 128Mi
+  limits:
+    memory: 256Mi
