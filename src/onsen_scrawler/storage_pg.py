@@ -4,7 +4,6 @@ from __future__ import annotations
 import re
 from datetime import datetime, timezone
 
-import psycopg
 from psycopg import Connection
 
 from .models import OnsenSpring
