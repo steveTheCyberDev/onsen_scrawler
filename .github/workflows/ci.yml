@@ -90,10 +90,15 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
+      # Image names must be lowercase; reuse the (lowercased) first tag from the metadata action
+      - name: Pick image ref to scan
+        id: first_tag
+        run: echo "ref=$(echo '${{ steps.meta.outputs.tags }}' | head -n1)" >> "$GITHUB_OUTPUT"
+
       - name: Scan image (Trivy)
         uses: aquasecurity/trivy-action@v0.36.0
         with:
-          image-ref: ${{ env.IMAGE }}:sha-${{ github.sha }}
+          image-ref: ${{ steps.first_tag.outputs.ref }}
           severity: CRITICAL,HIGH
           ignore-unfixed: true
           exit-code: "0"   # report only; set to "1" to fail the build
