@@ -1,0 +1,5 @@
+# Dev overrides. The tag below is rewritten by CI (update-dev-tag job) after
+# every successful image push from the develop branch.
+image:
+  tag: develop
+  pullPolicy: IfNotPresent

@@ -3,7 +3,7 @@ name: CI
 on:
   pull_request:
   push:
-    branches: [main, master]
+    branches: [main, master, develop]
 
 concurrency:
   group: ci-${{ github.ref }}
@@ -75,6 +75,7 @@ jobs:
           images: ${{ env.IMAGE }}
           tags: |
             type=sha,format=long
+            type=ref,event=branch
             type=raw,value=latest,enable={{is_default_branch}}
 
       # PRs: build only. Pushes to main: build and push.
@@ -102,3 +103,32 @@ jobs:
           severity: CRITICAL,HIGH
           ignore-unfixed: true
           exit-code: "0"   # report only; set to "1" to fail the build
+
+  # Dev CD: point the dev Argo CD app at the image we just pushed. Argo CD only
+  # watches git, so the tag bump is what triggers the deploy. Runs after the push
+  # succeeded, so the tag always exists in the registry. Commits made with
+  # GITHUB_TOKEN do not start new workflow runs, so this cannot loop.
+  update-dev-tag:
+    needs: docker
+    if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: develop
+
+      - name: Set image tag in values-dev.yaml
+        run: |
+          sed -i "s|^  tag: .*|  tag: sha-${{ github.sha }}|" charts/onsen-scrawler/values-dev.yaml
+          git diff --stat
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add charts/onsen-scrawler/values-dev.yaml
+          git commit -m "ci: deploy sha-${{ github.sha }} to dev" || exit 0
+          git pull --rebase origin develop
+          git push origin develop
